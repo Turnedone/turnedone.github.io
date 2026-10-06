@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loukas Pavlou (Turnedone): Python desktop apps and ML projects</title>
+<meta name="description" content="Loukas Pavlou (Turnedone) builds practical desktop apps and data / machine-learning tools in Python: Flixdex (Netflix & HBO Max with IMDb ratings), EdgeLab (honest ML trading research) and more.">
+<meta name="author" content="Loukas Pavlou">
+<link rel="canonical" href="https://turnedone.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Loukas Pavlou: Python desktop apps and ML projects">
+<meta property="og:description" content="Flixdex, EdgeLab and other open-source projects by Loukas Pavlou (Turnedone).">
+<meta property="og:url" content="https://turnedone.github.io/">
+<meta property="og:image" content="https://turnedone.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Loukas Pavlou",
+  "alternateName": "Turnedone",
+  "url": "https://turnedone.github.io/",
+  "email": "mailto:loukas.pavlou11@gmail.com",
+  "address": {"@type": "PostalAddress", "addressCountry": "GR"},
+  "sameAs": ["https://github.com/Turnedone"],
+  "knowsAbout": ["Python", "Machine learning", "Desktop applications", "Qt", "Data analysis"]
+}
+</script>
+<style>
+:root{--bg:#ffffff;--card:#f6f8fa;--line:#d1d9e0;--text:#1f2328;--muted:#59636e;--accent:#cf222e;--link:#0969da}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#151b23;--line:#30363d;--text:#e6edf3;--muted:#9198a1;--accent:#ff7b72;--link:#4493f8}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 "Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--link)}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 36px}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.1;margin:0 0 6px;letter-spacing:-.02em}
+.handle{color:var(--muted);font-size:18px;margin:0 0 20px}
+.lead{font-size:20px;max-width:680px;margin:0 0 24px}
+.links{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.links a{display:inline-block;padding:8px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--text);font-weight:600;font-size:15px}
+.links a:hover{border-color:var(--muted)}
+h2{font-size:26px;margin:48px 0 18px}
+.projects{display:grid;gap:22px}
+.project{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:22px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;align-items:center}
+.project img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+.project h3{margin:0 0 6px;font-size:23px}
+.project p{margin:0 0 12px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;padding:0;list-style:none}
+.tags li{font-size:13px;padding:2px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.actions a{font-weight:600;margin-right:16px;white-space:nowrap}
+footer{margin:56px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:720px){header{padding:44px 0 24px}.project{grid-template-columns:1fr}.lead{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Loukas Pavlou</h1>
+  <p class="handle">@Turnedone · Greece</p>
+  <p class="lead">I build practical desktop apps and data / machine-learning tools, mostly in Python.
+  I care about honest numbers, fast interfaces and software that respects your time.</p>
+  <ul class="links">
+    <li><a href="https://github.com/Turnedone">GitHub</a></li>
+    <li><a href="mailto:loukas.pavlou11@gmail.com">Email</a></li>
+  </ul>
+</header>
+
+<main>
+<h2>Projects</h2>
+<div class="projects">
+
+  <article class="project">
+    <a href="flixdex/"><img src="assets/flixdex.webp" width="1200" height="750" alt="Flixdex showing Netflix and HBO Max titles sorted by IMDb rating"></a>
+    <div>
+      <h3><a href="flixdex/">Flixdex</a></h3>
+      <p>Every Netflix and HBO Max title in your country with its IMDb rating, in one fast Windows app.
+      Search, filter by genre, year and rating, and open any title with one click. Free, and it uses no rate-limited APIs.</p>
+      <ul class="tags"><li>Python</li><li>Qt / PySide6</li><li>Windows</li><li>IMDb</li></ul>
+      <p class="actions"><a href="flixdex/">Learn more</a><a href="https://github.com/Turnedone/flixdex/releases/latest">Download</a><a href="https://github.com/Turnedone/flixdex">Source</a></p>
+    </div>
+  </article>
+
+  <article class="project">
+    <a href="edgelab/"><img src="assets/edgelab.webp" width="1200" height="943" alt="EdgeLab research dashboard with the verdict: no statistically significant edge"></a>
+    <div>
+      <h3><a href="edgelab/">EdgeLab</a></h3>
+      <p>Does an intraday machine-learning stock strategy have a real edge after costs? A research system built to answer
+      honestly, with walk-forward validation, realistic costs, random baselines and Deflated Sharpe. So far, the answer is no.</p>
+      <ul class="tags"><li>Python</li><li>scikit-learn</li><li>LightGBM</li><li>Quant research</li></ul>
+      <p class="actions"><a href="edgelab/">Learn more</a><a href="https://github.com/Turnedone/edgelab">Source</a></p>
+    </div>
+  </article>
+
+  <article class="project">
+    <a href="https://github.com/Turnedone/computational-intelligence"><img src="assets/computational-intelligence.webp" width="770" height="462" alt="Training and test loss of a neural network predicting MovieLens ratings"></a>
+    <div>
+      <h3><a href="https://github.com/Turnedone/computational-intelligence">Computational Intelligence</a></h3>
+      <p>Predicting MovieLens movie ratings two ways: a neural network and a genetic algorithm.
+      University coursework from 2020, cleaned up, bug-fixed and tested.</p>
+      <ul class="tags"><li>Neural networks</li><li>Genetic algorithms</li><li>Recommender systems</li></ul>
+      <p class="actions"><a href="https://github.com/Turnedone/computational-intelligence">Source</a></p>
+    </div>
+  </article>
+
+</div>
+</main>
+
+<footer>© 2026 Loukas Pavlou · <a href="https://github.com/Turnedone">github.com/Turnedone</a></footer>
+</div>
+</body>
+</html>
