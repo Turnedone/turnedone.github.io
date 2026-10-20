@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Loukas Pavlou: software developer (SQL, PL/SQL, Oracle APEX, Python)</title>
-<meta name="description" content="Loukas Pavlou is a software developer at Allianz Greece working with SQL, PL/SQL and Oracle APEX. Side projects in Python: Flixdex (Netflix & HBO Max with IMDb ratings) and EdgeLab (honest ML trading research).">
+<title>Loukas Pavlou: software developer (robotics in C++ / ROS 2, SQL, Oracle APEX, Python)</title>
+<meta name="description" content="Loukas Pavlou is a software developer at Allianz Greece (SQL, PL/SQL, Oracle APEX) moving into robotics: a ROS 2 / Nav2 warehouse delivery robot and a from-scratch C++ autonomy stack, plus Python projects Flixdex and EdgeLab.">
 <meta name="author" content="Loukas Pavlou">
 <link rel="canonical" href="https://turnedone.github.io/">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Loukas Pavlou: software developer">
-<meta property="og:description" content="Flixdex, EdgeLab and other open-source projects by Loukas Pavlou (Turnedone).">
+<meta property="og:description" content="Robotics (ROS 2, Nav2, C++), Flixdex, EdgeLab and other open-source projects by Loukas Pavlou (Turnedone).">
 <meta property="og:url" content="https://turnedone.github.io/">
 <meta property="og:image" content="https://turnedone.github.io/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -27,7 +27,7 @@
   "jobTitle": "Software Developer",
   "worksFor": {"@type": "Organization", "name": "Allianz Greece"},
   "alumniOf": {"@type": "CollegeOrUniversity", "name": "University of Patras"},
-  "knowsAbout": ["SQL", "PL/SQL", "Oracle APEX", "REST APIs", "Python", "Machine learning"]
+  "knowsAbout": ["Robotics", "ROS 2", "Nav2", "C++", "Gazebo", "SQL", "PL/SQL", "Oracle APEX", "REST APIs", "Python", "Machine learning"]
 }
 </script>
 <style>
@@ -62,8 +62,9 @@ footer{margin:56px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid
 <header>
   <h1>Loukas Pavlou</h1>
   <p class="handle">@Turnedone · Greece</p>
-  <p class="lead">Software developer at Allianz Greece, working mainly with SQL, PL/SQL and Oracle APEX.
-  On the side I build Python apps and machine-learning research tools. Computer Engineering &amp; Informatics, University of Patras.</p>
+  <p class="lead">Software developer at Allianz Greece, working mainly with SQL, PL/SQL and Oracle APEX,
+  and moving into robotics: mobile-robot autonomy in C++ and ROS 2. Before that, Python apps and
+  machine-learning research tools. Computer Engineering &amp; Informatics, University of Patras.</p>
   <ul class="links">
     <li><a href="https://www.linkedin.com/in/luke-pavlou-753104219/" rel="me">LinkedIn</a></li>
     <li><a href="https://github.com/Turnedone" rel="me">GitHub</a></li>
@@ -72,7 +73,37 @@ footer{margin:56px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid
 </header>
 
 <main>
-<h2>Projects</h2>
+<h2>Robotics</h2>
+<div class="projects">
+
+  <article class="project">
+    <a href="https://github.com/Turnedone/warehouse-delivery-robot"><img src="assets/warehouse-delivery-robot.webp" width="1200" height="819" alt="Paths a TurtleBot 4 drove through a simulated warehouse, one colour per delivery order"></a>
+    <div>
+      <h3><a href="https://github.com/Turnedone/warehouse-delivery-robot">Warehouse delivery robot</a></h3>
+      <p>A TurtleBot 4 takes delivery orders from a queue and drives them from shelves to packing stations
+      through a simulated warehouse with keep-out zones, slow zones and a moving forklift, and docks to charge
+      before an order it could not finish. Built on the industry stack: Nav2, a C++ mission layer on
+      BehaviorTree.CPP, end-to-end tests and KPIs computed from recorded runs.</p>
+      <ul class="tags"><li>C++17</li><li>ROS 2 Jazzy</li><li>Nav2</li><li>Gazebo</li><li>Behavior trees</li></ul>
+      <p class="actions"><a href="https://github.com/Turnedone/warehouse-delivery-robot">Source &amp; docs</a></p>
+    </div>
+  </article>
+
+  <article class="project">
+    <a href="https://github.com/Turnedone/robot-sim"><img src="assets/robot-sim.webp" width="838" height="525" alt="robot-sim: a robot planning through a maze it has only partly mapped"></a>
+    <div>
+      <h3><a href="https://github.com/Turnedone/robot-sim">robot-sim</a></h3>
+      <p>The autonomy stack written from scratch: differential-drive kinematics, a noisy lidar, occupancy-grid
+      mapping, A* and pure pursuit, particle-filter localization and GMapping-style SLAM. The same core drives
+      a TurtleBot 3 in Gazebo through ROS 2.</p>
+      <ul class="tags"><li>C++17</li><li>CMake</li><li>SLAM</li><li>Localization</li><li>ROS 2</li></ul>
+      <p class="actions"><a href="https://github.com/Turnedone/robot-sim">Source &amp; docs</a></p>
+    </div>
+  </article>
+
+</div>
+
+<h2>Other projects</h2>
 <div class="projects">
 
   <article class="project">
